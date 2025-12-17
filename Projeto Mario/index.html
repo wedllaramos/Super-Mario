@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-section">
+        <img class="image-logo" src="./img/logo.png" alt="Logo do Super Mario">
+        <h1>Bem-vindo ao site oficial dos Encanadores Mario & Luigi!</h1>
+        <p>Encanadores Mario & Luigi - Resolvendo seus problemas com estilo!
+            Você sabia que Mario e Luigi não são apenas encanadores habilidosos, mas também aventureiros corajosos
+            que
+            enfrentam desafios incríveis para salvar o Reino dos Cogumelos? Com suas habilidades únicas e espírito
+            de
+            equipe, eles garantem que cada missão seja cumprida com sucesso!
+        </p>
+        <button onclick="abrirFormulario()">ENTRE EM CONTATO</button>
+    </div>
+
+    <img src="./img/mario.png" alt="Imagem do Mario" class="image-mario">
+
+    <div>
+        <video class="video-background" width="320" height="240" autoplay muted loop>
+            <source src="./video/video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <form class="form-contact" action="https://formsubmit.co/wedlladevramos@gmail.com">
+        <h3>Fale Conosco</h3>
+        <input type="name" placeholder="Seu nome" name ="name">
+        <input type="email" placeholder="Seu email" name="email">
+        <textarea placeholder="O que está acontecendo?" name="message"></textarea>
+        <button type="submit">ENVIAR MENSAGEM</button>
+    </form>
+
+    <div class="mascara-form"></div>
+</body>
+
+<script>
+    let formulario = document.querySelector(".form-contact")
+    let mascara = document.querySelector(".mascara-form")
+
+    function abrirFormulario() {
+        formulario.style.left = "900px"
+        mascara.style.visibility = "visible"
+    }
+
+    function fecharFormulario() {
+        formulario.style.left = "-380px"
+        mascara.style.visibility = "hidden"
+    }
+
+
+</script>
+
+</html>

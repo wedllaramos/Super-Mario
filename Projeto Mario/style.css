@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mascara-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10,12,16,0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-section {
+    width: 40%;
+    gap: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+}
+
+
+.main-section p {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.image-logo {
+    width: 200px;
+}
+
+.image-mario {
+    width: 600px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    gap: 20px;
+    position: fixed;
+    left: -380px;
+    transition: left 1s ease;
+    z-index: 4;
+}
+
+input {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline-color: aquamarine;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline-color: aquamarine;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 150px;
+}
+
+.mascara-form {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10,12,16,0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 3;
+    visibility: hidden;
+}
